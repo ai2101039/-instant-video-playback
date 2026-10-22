@@ -1,0 +1,178 @@
+{
+  "evidenceLevel": "historical_measurement",
+  "date": "2026-10-22",
+  "metric": "click_to_matching_rendered_first_frame",
+  "unit": "ms",
+  "device": {
+    "model": "Huawei CDY-AN00",
+    "androidVersion": "10"
+  },
+  "build": {
+    "type": "performance",
+    "debuggable": false,
+    "sha256": "b84a4fdcccac7e39a302a6808a235ba5e8cafeb1a09294ff3de49d10603f86ad"
+  },
+  "media": {
+    "alias": "sample-A",
+    "episodeNumber": 9,
+    "container": "MP4",
+    "codec": "H.264",
+    "width": 1080,
+    "height": 1920,
+    "frameRate": 25,
+    "videoBitrateBps": 1548480
+  },
+  "conditions": {
+    "entry": "profile_recent_viewing_card",
+    "includesAppStartup": false,
+    "processRestartedPerTrial": true,
+    "currentMediaCacheClearedPerTrial": true,
+    "neighborCachePreserved": true,
+    "upstreamCdnCacheControlled": false,
+    "sameSourceAsHistorical20261021": false,
+    "rawPrivateLogsIncluded": false,
+    "serverCurrentRespected": true
+  },
+  "groups": [
+    {
+      "positionMs": 0,
+      "samples": [
+        {
+          "iteration": 1,
+          "clickToFrameMs": 706,
+          "actualFirstFramePositionMs": 0,
+          "directoryReadyMs": 183,
+          "sourceReadyMs": 185,
+          "prepareMs": 430,
+          "decoderReadyMs": 618,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 2,
+          "clickToFrameMs": 666,
+          "actualFirstFramePositionMs": 0,
+          "directoryReadyMs": 194,
+          "sourceReadyMs": 196,
+          "prepareMs": 406,
+          "decoderReadyMs": 584,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 3,
+          "clickToFrameMs": 687,
+          "actualFirstFramePositionMs": 0,
+          "directoryReadyMs": 177,
+          "sourceReadyMs": 179,
+          "prepareMs": 417,
+          "decoderReadyMs": 597,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 4,
+          "clickToFrameMs": 661,
+          "actualFirstFramePositionMs": 0,
+          "directoryReadyMs": 204,
+          "sourceReadyMs": 206,
+          "prepareMs": 414,
+          "decoderReadyMs": 585,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 5,
+          "clickToFrameMs": 636,
+          "actualFirstFramePositionMs": 0,
+          "directoryReadyMs": 168,
+          "sourceReadyMs": 171,
+          "prepareMs": 385,
+          "decoderReadyMs": 560,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        }
+      ],
+      "samplesMs": [
+        706,
+        666,
+        687,
+        661,
+        636
+      ],
+      "medianMs": 666,
+      "minMs": 636,
+      "maxMs": 706
+    },
+    {
+      "positionMs": 8000,
+      "samples": [
+        {
+          "iteration": 1,
+          "clickToFrameMs": 996,
+          "actualFirstFramePositionMs": 8000,
+          "directoryReadyMs": 172,
+          "sourceReadyMs": 174,
+          "prepareMs": 392,
+          "decoderReadyMs": 569,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 2,
+          "clickToFrameMs": 1024,
+          "actualFirstFramePositionMs": 8000,
+          "directoryReadyMs": 171,
+          "sourceReadyMs": 173,
+          "prepareMs": 404,
+          "decoderReadyMs": 604,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 3,
+          "clickToFrameMs": 1004,
+          "actualFirstFramePositionMs": 8000,
+          "directoryReadyMs": 185,
+          "sourceReadyMs": 187,
+          "prepareMs": 402,
+          "decoderReadyMs": 589,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 4,
+          "clickToFrameMs": 980,
+          "actualFirstFramePositionMs": 8000,
+          "directoryReadyMs": 191,
+          "sourceReadyMs": 193,
+          "prepareMs": 410,
+          "decoderReadyMs": 580,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 5,
+          "clickToFrameMs": 1066,
+          "actualFirstFramePositionMs": 8000,
+          "directoryReadyMs": 181,
+          "sourceReadyMs": 183,
+          "prepareMs": 412,
+          "decoderReadyMs": 589,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        }
+      ],
+      "samplesMs": [
+        996,
+        1024,
+        1004,
+        980,
+        1066
+      ],
+      "medianMs": 1004,
+      "minMs": 980,
+      "maxMs": 1066
+    }
+  ]
+}

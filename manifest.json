@@ -7,6 +7,13 @@
   "entrypoint": "AI_START_HERE.md",
   "agentInstructions": "AGENTS.md",
   "singleFileContext": "AI_CONTEXT.md",
+  "overview": "docs/00-system-design.md",
+  "latestSourceMeasurement": "examples/current-benchmark-2026-10-22.json",
+  "layers": [
+    { "id": "app", "name": "App 端", "documents": ["docs/04-player.md", "docs/05-adoption.md"] },
+    { "id": "backend", "name": "后端", "documents": ["docs/02-api.md", "docs/03-data-and-cache.md"] },
+    { "id": "media", "name": "视频来源", "documents": ["docs/08-media-source.md"] }
+  ],
   "includesRunnableSdk": false,
   "includesProductionDdl": false,
   "license": "MIT",
@@ -23,6 +30,8 @@
     { "id": "independent-playback-queues", "evidenceLevel": "source_verified", "document": "docs/04-player.md", "requires": ["reproduced_queue_contention", "compatible_media3_api", "per_slot_source_ownership"], "acceptance": "queue_isolation_test_and_same_source_first_frame_measurement" },
     { "id": "precise-resume-and-http", "evidenceLevel": "source_verified", "document": "docs/04-player.md", "requires": ["reproduced_seek_or_close_cost", "range_eof_and_reuse_tests"], "acceptance": "exact_position_normal_speed_and_correct_http_lifecycle" },
     { "id": "first-frame-measurement", "evidenceLevel": "historical_measurement", "document": "docs/06-measurement.md", "requires": ["build_identity", "fixed_source_position_and_cache_conditions"], "acceptance": "all_valid_samples_reported_without_relabeling_historical_data" },
-    { "id": "expiry-contract-and-resource-adaptation", "evidenceLevel": "recommendation", "document": "docs/05-adoption.md", "requires": ["target_backend_expiry_information", "target_device_validation"], "acceptance": "target_specific_limits_and_expiry_policy_verified" }
+    { "id": "expiry-contract-and-resource-adaptation", "evidenceLevel": "recommendation", "document": "docs/05-adoption.md", "requires": ["target_backend_expiry_information", "target_device_validation"], "acceptance": "target_specific_limits_and_expiry_policy_verified" },
+    { "id": "mp4-faststart", "evidenceLevel": "recommendation", "document": "docs/08-media-source.md", "requires": ["non_fragmented_mp4", "confirmed_box_layout", "target_http_range_support"], "acceptance": "moov_before_mdat_and_unchanged_tracks_with_actual_startup_measurement" },
+    { "id": "vod-transcoding-and-cdn", "evidenceLevel": "recommendation", "document": "docs/08-media-source.md", "requires": ["quality_and_codec_compatibility_targets", "confirmed_transcoding_and_distribution_configuration"], "acceptance": "measured_output_quality_bitrate_first_byte_and_rendered_first_frame" }
   ]
 }

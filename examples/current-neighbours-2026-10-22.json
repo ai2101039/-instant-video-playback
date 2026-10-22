@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-22",
+  "evidenceLevel": "historical_measurement",
+  "buildType": "debug_instrumentation",
+  "timingMeaning": "gesture_to_isPlaying_observation_including_180ms_gesture_and_test_synchronization_not_first_frame_latency",
+  "source": "actual_online_media",
+  "experiments": [
+    {
+      "condition": "jump_from_directory_current_to_early_window",
+      "playerCount": 5,
+      "distinctPlaybackThreads": 5,
+      "renderedWindow": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "samples": [
+        {
+          "episodeNumber": 4,
+          "gestureToPlayingObservedMs": 530,
+          "samePlayerAndMediaId": true,
+          "width": 360,
+          "height": 640
+        },
+        {
+          "episodeNumber": 3,
+          "gestureToPlayingObservedMs": 494,
+          "samePlayerAndMediaId": true,
+          "width": 360,
+          "height": 640
+        },
+        {
+          "episodeNumber": 2,
+          "gestureToPlayingObservedMs": 339,
+          "samePlayerAndMediaId": true,
+          "width": 478,
+          "height": 848
+        },
+        {
+          "episodeNumber": 3,
+          "gestureToPlayingObservedMs": 366,
+          "samePlayerAndMediaId": true,
+          "width": 360,
+          "height": 640
+        }
+      ]
+    },
+    {
+      "condition": "play_from_directory_current_and_promote_neighbors",
+      "playerCount": 5,
+      "distinctPlaybackThreads": 5,
+      "usesDirectoryCurrent": true,
+      "renderedWindow": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "samples": [
+        {
+          "episodeNumber": 4,
+          "gestureToPlayingObservedMs": 646,
+          "samePlayerAndMediaId": true,
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "episodeNumber": 3,
+          "gestureToPlayingObservedMs": 432,
+          "samePlayerAndMediaId": true,
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "episodeNumber": 2,
+          "gestureToPlayingObservedMs": 497,
+          "samePlayerAndMediaId": true,
+          "width": 478,
+          "height": 848
+        },
+        {
+          "episodeNumber": 3,
+          "gestureToPlayingObservedMs": 334,
+          "samePlayerAndMediaId": true,
+          "width": 1080,
+          "height": 1920
+        }
+      ]
+    }
+  ],
+  "interpretation": "five_players_and_five_distinct_playback_threads_verified; every_promotion_retained_real_frame_player_and_media_identity; directory_current_chapters_3_and_4_rendered_at_1080x1920; chapter_2_rendered_at_478x848"
+}

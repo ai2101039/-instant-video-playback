@@ -2,6 +2,8 @@
 
 本仓库是“设计包”，用户可能让你把这些经验用到另一个项目。先阅读 AI_START_HERE.md，再根据 manifest.json 读取相关文档。若只能读取一份材料，读取 AI_CONTEXT.md。
 
+分析与交付按 App 端、后端、视频来源三层组织；先读 docs/00-system-design.md，视频封装、转码与 CDN 见 docs/08-media-source.md。
+
 1. 先确认用户授权范围：分析、修改代码、提交、发布分别判断。遵守用户及目标项目的执行规则。不要因为阅读本包就自行部署或修改生产数据库。
 2. 先检查目标项目的真实链路与现有实现；仅询问代码和资料中无法确定、且影响方案的信息。保护工作区已有修改。
 3. 区分 `source_verified`（源项目代码核对）、`documented_backend`（后端说明记载）、`historical_measurement`（历史实测）、`recommendation`（接入建议）。这些状态都不表示目标项目已经具备能力。
