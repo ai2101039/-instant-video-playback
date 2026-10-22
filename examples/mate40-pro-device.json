@@ -1,0 +1,30 @@
+{
+  "model": "HUAWEI Mate 40 Pro",
+  "modelCode": "NOH-AN01",
+  "chipset": "Kirin 9000",
+  "gpu": "Mali-G78 MP24",
+  "nominalRamGb": 8,
+  "kernelMemTotalKiB": 7668592,
+  "nominalStorageGbInferred": 256,
+  "dataPartitionGiB": 226,
+  "freeDataPartitionGiBAtStart": 57,
+  "os": "HarmonyOS",
+  "osVersion": "4.2.0.196(C00E182R8P6)",
+  "androidCompatibilityRelease": "12",
+  "apiLevel": 31,
+  "screenPhysicalPixels": [
+    1344,
+    2772
+  ],
+  "screenEffectivePixels": [
+    1152,
+    2376
+  ],
+  "activeRefreshRateHz": 90,
+  "batteryTemperatureCAtStart": 34.0,
+  "batteryLevelAtStart": 89,
+  "chargingAtStart": true,
+  "officialSpecificationsUrl": "https://consumer.huawei.com/th/offer/shopee/mate40-pro/specs/",
+  "storageNote": "Nominal storage is inferred from data partition size; memory and software versions are read from the connected device.",
+  "physicalDensityDpi": 560
+}

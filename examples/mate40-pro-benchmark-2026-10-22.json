@@ -1,0 +1,206 @@
+{
+  "evidenceLevel": "historical_measurement",
+  "date": "2026-10-22",
+  "metric": "click_to_matching_rendered_first_frame",
+  "unit": "ms",
+  "device": {
+    "model": "HUAWEI Mate 40 Pro",
+    "modelCode": "NOH-AN01",
+    "chipset": "Kirin 9000",
+    "gpu": "Mali-G78 MP24",
+    "nominalRamGb": 8,
+    "kernelMemTotalKiB": 7668592,
+    "nominalStorageGbInferred": 256,
+    "dataPartitionGiB": 226,
+    "freeDataPartitionGiBAtStart": 57,
+    "os": "HarmonyOS",
+    "osVersion": "4.2.0.196(C00E182R8P6)",
+    "androidCompatibilityRelease": "12",
+    "apiLevel": 31,
+    "screenPhysicalPixels": [
+      1344,
+      2772
+    ],
+    "screenEffectivePixels": [
+      1152,
+      2376
+    ],
+    "activeRefreshRateHz": 90,
+    "batteryTemperatureCAtStart": 34.0,
+    "batteryLevelAtStart": 89,
+    "chargingAtStart": true,
+    "officialSpecificationsUrl": "https://consumer.huawei.com/th/offer/shopee/mate40-pro/specs/",
+    "storageNote": "Nominal storage is inferred from data partition size; memory and software versions are read from the connected device.",
+    "physicalDensityDpi": 560
+  },
+  "build": {
+    "type": "performance",
+    "debuggable": false,
+    "sha256": "b84a4fdcccac7e39a302a6808a235ba5e8cafeb1a09294ff3de49d10603f86ad"
+  },
+  "media": {
+    "alias": "sample-A",
+    "episodeNumber": 9,
+    "container": "MP4",
+    "codec": "H.264",
+    "width": 1080,
+    "height": 1920,
+    "frameRate": 25,
+    "videoBitrateBps": 1548480
+  },
+  "conditions": {
+    "entry": "profile_recent_viewing_card",
+    "includesAppStartup": false,
+    "processRestartedPerTrial": true,
+    "currentMediaCacheClearedPerTrial": true,
+    "neighborCachePreserved": true,
+    "upstreamCdnCacheControlled": false,
+    "rawPrivateLogsIncluded": false,
+    "serverCurrentRespected": true,
+    "sameSourceAsPreviousDevice20261022": true,
+    "samePerformanceApkAsPreviousDevice": true,
+    "betweenDevicesNetworkAndOsControlled": false
+  },
+  "groups": [
+    {
+      "positionMs": 0,
+      "samples": [
+        {
+          "iteration": 1,
+          "clickToFrameMs": 552,
+          "actualFirstFramePositionMs": 0,
+          "directoryReadyMs": 142,
+          "sourceReadyMs": 143,
+          "prepareMs": 236,
+          "decoderReadyMs": 494,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 2,
+          "clickToFrameMs": 1355,
+          "actualFirstFramePositionMs": 0,
+          "directoryReadyMs": 430,
+          "sourceReadyMs": 435,
+          "prepareMs": 596,
+          "decoderReadyMs": 1218,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 3,
+          "clickToFrameMs": 562,
+          "actualFirstFramePositionMs": 0,
+          "directoryReadyMs": 221,
+          "sourceReadyMs": 223,
+          "prepareMs": 390,
+          "decoderReadyMs": 519,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 4,
+          "clickToFrameMs": 508,
+          "actualFirstFramePositionMs": 0,
+          "directoryReadyMs": 179,
+          "sourceReadyMs": 180,
+          "prepareMs": 324,
+          "decoderReadyMs": 460,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 5,
+          "clickToFrameMs": 455,
+          "actualFirstFramePositionMs": 0,
+          "directoryReadyMs": 162,
+          "sourceReadyMs": 164,
+          "prepareMs": 263,
+          "decoderReadyMs": 400,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        }
+      ],
+      "samplesMs": [
+        552,
+        1355,
+        562,
+        508,
+        455
+      ],
+      "medianMs": 552,
+      "minMs": 455,
+      "maxMs": 1355
+    },
+    {
+      "positionMs": 8000,
+      "samples": [
+        {
+          "iteration": 1,
+          "clickToFrameMs": 1001,
+          "actualFirstFramePositionMs": 8000,
+          "directoryReadyMs": 162,
+          "sourceReadyMs": 163,
+          "prepareMs": 310,
+          "decoderReadyMs": 458,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 2,
+          "clickToFrameMs": 989,
+          "actualFirstFramePositionMs": 8000,
+          "directoryReadyMs": 153,
+          "sourceReadyMs": 155,
+          "prepareMs": 305,
+          "decoderReadyMs": 468,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 3,
+          "clickToFrameMs": 841,
+          "actualFirstFramePositionMs": 8000,
+          "directoryReadyMs": 173,
+          "sourceReadyMs": 174,
+          "prepareMs": 323,
+          "decoderReadyMs": 476,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 4,
+          "clickToFrameMs": 821,
+          "actualFirstFramePositionMs": 8000,
+          "directoryReadyMs": 159,
+          "sourceReadyMs": 161,
+          "prepareMs": 314,
+          "decoderReadyMs": 455,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        },
+        {
+          "iteration": 5,
+          "clickToFrameMs": 881,
+          "actualFirstFramePositionMs": 8000,
+          "directoryReadyMs": 168,
+          "sourceReadyMs": 170,
+          "prepareMs": 324,
+          "decoderReadyMs": 485,
+          "directoryRequestsBeforeFirstFrame": 1,
+          "independentPlayInfoRequestsBeforeCurrentSource": 0
+        }
+      ],
+      "samplesMs": [
+        1001,
+        989,
+        841,
+        821,
+        881
+      ],
+      "medianMs": 881,
+      "minMs": 821,
+      "maxMs": 1001
+    }
+  ]
+}

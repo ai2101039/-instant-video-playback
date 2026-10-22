@@ -8,7 +8,9 @@
   "agentInstructions": "AGENTS.md",
   "singleFileContext": "AI_CONTEXT.md",
   "overview": "docs/00-system-design.md",
-  "latestSourceMeasurement": "examples/current-benchmark-2026-10-22.json",
+  "latestSourceMeasurement": "examples/mate40-pro-benchmark-2026-10-22.json",
+  "deviceComparison": "docs/09-device-comparison.md",
+  "sourceMeasurements": ["examples/current-benchmark-2026-10-22.json", "examples/mate40-pro-benchmark-2026-10-22.json"],
   "layers": [
     { "id": "app", "name": "App 端", "documents": ["docs/04-player.md", "docs/05-adoption.md"] },
     { "id": "backend", "name": "后端", "documents": ["docs/02-api.md", "docs/03-data-and-cache.md"] },

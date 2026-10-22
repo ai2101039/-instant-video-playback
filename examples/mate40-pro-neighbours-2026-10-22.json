@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-22",
+  "device": "HUAWEI Mate 40 Pro",
+  "buildType": "debug_instrumentation",
+  "timingMeaning": "includes_180ms_gesture_and_test_synchronization_not_first_frame_latency",
+  "experiments": [
+    {
+      "condition": "jump_to_early_window",
+      "playerCount": 5,
+      "distinctPlaybackThreads": 5,
+      "usesDirectoryCurrent": false,
+      "renderedWindow": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "samples": [
+        {
+          "episodeNumber": 4,
+          "gestureToPlayingObservedMs": 675,
+          "samePlayerAndMediaId": true,
+          "width": 360,
+          "height": 640
+        },
+        {
+          "episodeNumber": 3,
+          "gestureToPlayingObservedMs": 1052,
+          "samePlayerAndMediaId": true,
+          "width": 360,
+          "height": 640
+        },
+        {
+          "episodeNumber": 2,
+          "gestureToPlayingObservedMs": 437,
+          "samePlayerAndMediaId": true,
+          "width": 478,
+          "height": 848
+        },
+        {
+          "episodeNumber": 3,
+          "gestureToPlayingObservedMs": 466,
+          "samePlayerAndMediaId": true,
+          "width": 360,
+          "height": 640
+        }
+      ]
+    },
+    {
+      "condition": "from_directory_current",
+      "playerCount": 5,
+      "distinctPlaybackThreads": 5,
+      "usesDirectoryCurrent": true,
+      "renderedWindow": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "samples": [
+        {
+          "episodeNumber": 4,
+          "gestureToPlayingObservedMs": 734,
+          "samePlayerAndMediaId": true,
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "episodeNumber": 3,
+          "gestureToPlayingObservedMs": 436,
+          "samePlayerAndMediaId": true,
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "episodeNumber": 2,
+          "gestureToPlayingObservedMs": 328,
+          "samePlayerAndMediaId": true,
+          "width": 478,
+          "height": 848
+        },
+        {
+          "episodeNumber": 3,
+          "gestureToPlayingObservedMs": 384,
+          "samePlayerAndMediaId": true,
+          "width": 1080,
+          "height": 1920
+        }
+      ]
+    }
+  ]
+}
