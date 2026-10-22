@@ -1,0 +1,24 @@
+{
+  "evidenceLevel": "historical_measurement",
+  "date": "2026-10-21",
+  "unit": "ms",
+  "metric": "click_to_matching_rendered_first_frame",
+  "device": "Huawei CDY-AN00",
+  "androidVersion": "10",
+  "media": { "container": "MP4", "width": 1080, "height": 1920 },
+  "conditions": {
+    "includesAppStartup": false,
+    "processRestartedPerTrial": true,
+    "currentMediaCacheClearedPerTrial": true,
+    "neighborCachePreserved": true,
+    "alternatingInstallOrder": true,
+    "strictSingleVariableExperiment": false,
+    "rawLogsIncluded": false
+  },
+  "groups": [
+    { "positionMs": 0, "variant": "shared", "samplesMs": [533, 567, 514, 573, 529], "medianMs": 533 },
+    { "positionMs": 0, "variant": "independent", "samplesMs": [592, 632, 593, 540, 1012], "medianMs": 593 },
+    { "positionMs": 8000, "variant": "shared", "samplesMs": [933, 1241, 1227, 1345, 1175], "medianMs": 1227 },
+    { "positionMs": 8000, "variant": "independent", "samplesMs": [959, 1048, 2778, 1083, 1142], "medianMs": 1083 }
+  ]
+}

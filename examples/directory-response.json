@@ -1,0 +1,25 @@
+{
+  "exampleKind": "normalized_illustration_not_production_contract",
+  "dramaId": "demo-drama",
+  "chapters": [
+    { "chapterId": "demo-chapter-1", "serial": 1, "videoId": "demo-video-1", "locked": false },
+    { "chapterId": "demo-chapter-2", "serial": 2, "videoId": "demo-video-2", "locked": false },
+    { "chapterId": "demo-chapter-3", "serial": 3, "videoId": "demo-video-3", "locked": true }
+  ],
+  "playUrls": [
+    {
+      "serial": 1,
+      "videoId": "demo-video-1",
+      "playUrl": "https://media.example.com/demo/1/index.m3u8",
+      "current": true,
+      "expiresAt": "2030-01-01T01:00:00Z"
+    },
+    {
+      "serial": 2,
+      "videoId": "demo-video-2",
+      "playUrl": "https://media.example.com/demo/2/index.m3u8",
+      "current": false,
+      "expiresAt": "2030-01-01T01:00:00Z"
+    }
+  ]
+}

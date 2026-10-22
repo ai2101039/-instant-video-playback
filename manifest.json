@@ -1,0 +1,28 @@
+{
+  "formatVersion": 1,
+  "name": "instant-video-playback",
+  "language": "zh-CN",
+  "artifactType": "ai_readable_design_kit",
+  "preparedAt": "2026-10-22",
+  "entrypoint": "AI_START_HERE.md",
+  "agentInstructions": "AGENTS.md",
+  "singleFileContext": "AI_CONTEXT.md",
+  "includesRunnableSdk": false,
+  "includesProductionDdl": false,
+  "license": "unspecified",
+  "sourceStack": ["Kotlin", "Jetpack Compose", "Media3", "DataStore", "OkHttp", "Redis"],
+  "evidenceLevels": ["source_verified", "documented_backend", "historical_measurement", "recommendation"],
+  "patterns": [
+    { "id": "api-playback-window", "evidenceLevel": "source_verified", "document": "docs/02-api.md", "requires": ["confirmed_directory_contract", "fresh_permission_snapshot"], "acceptance": "valid_window_source_avoids_duplicate_resolution" },
+    { "id": "backend-query-and-cache", "evidenceLevel": "documented_backend", "document": "docs/03-data-and-cache.md", "requires": ["backend_source_for_verification", "actual_ddl_and_query_plan_before_database_changes"], "acceptance": "measure_database_calls_and_vod_calls_with_permission_isolation" },
+    { "id": "client-url-cache", "evidenceLevel": "source_verified", "document": "docs/03-data-and-cache.md", "requires": ["expiry_contract", "account_and_permission_scope"], "acceptance": "deduplication_expiry_cancellation_and_stale_results_verified" },
+    { "id": "shared-media-cache", "evidenceLevel": "source_verified", "document": "docs/03-data-and-cache.md", "requires": ["resource_specific_cache_keys", "bounded_storage"], "acceptance": "actual_cached_bytes_reused_without_resource_key_collision" },
+    { "id": "bounded-player-ownership", "evidenceLevel": "source_verified", "document": "docs/04-player.md", "requires": ["device_resource_budget", "single_foreground_owner"], "acceptance": "bounded_instances_single_audio_owner_and_correct_handoff" },
+    { "id": "current-first-frame-priority", "evidenceLevel": "source_verified", "document": "docs/04-player.md", "requires": ["matching_rendered_frame_event", "output_ownership"], "acceptance": "current_frame_precedes_neighbor_prepare_and_neighbors_resume" },
+    { "id": "bounded-preloading", "evidenceLevel": "source_verified", "document": "docs/04-player.md", "requires": ["permission_aware_targets", "cancellable_speculative_tasks"], "acceptance": "warm_frame_promotion_without_unnecessary_reprepare_or_locked_loads" },
+    { "id": "independent-playback-queues", "evidenceLevel": "source_verified", "document": "docs/04-player.md", "requires": ["reproduced_queue_contention", "compatible_media3_api", "per_slot_source_ownership"], "acceptance": "queue_isolation_test_and_same_source_first_frame_measurement" },
+    { "id": "precise-resume-and-http", "evidenceLevel": "source_verified", "document": "docs/04-player.md", "requires": ["reproduced_seek_or_close_cost", "range_eof_and_reuse_tests"], "acceptance": "exact_position_normal_speed_and_correct_http_lifecycle" },
+    { "id": "first-frame-measurement", "evidenceLevel": "historical_measurement", "document": "docs/06-measurement.md", "requires": ["build_identity", "fixed_source_position_and_cache_conditions"], "acceptance": "all_valid_samples_reported_without_relabeling_historical_data" },
+    { "id": "expiry-contract-and-resource-adaptation", "evidenceLevel": "recommendation", "document": "docs/05-adoption.md", "requires": ["target_backend_expiry_information", "target_device_validation"], "acceptance": "target_specific_limits_and_expiry_policy_verified" }
+  ]
+}
