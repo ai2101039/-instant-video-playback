@@ -9,7 +9,7 @@
   "singleFileContext": "AI_CONTEXT.md",
   "includesRunnableSdk": false,
   "includesProductionDdl": false,
-  "license": "unspecified",
+  "license": "MIT",
   "sourceStack": ["Kotlin", "Jetpack Compose", "Media3", "DataStore", "OkHttp", "Redis"],
   "evidenceLevels": ["source_verified", "documented_backend", "historical_measurement", "recommendation"],
   "patterns": [
